@@ -1,0 +1,30 @@
+div {
+    border: 2px solid black;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardTable {
+    height: 500px;
+    width: 100vw;
+}
+
+#logBoxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logBox {
+    height: 300px;
+    width: 300px;
+}
+
+#loginEnv {
+    height: 300px;
+    width: 300px;
+}
