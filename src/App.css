@@ -1,5 +1,5 @@
 div {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 header {
@@ -10,21 +10,37 @@ header {
 }
 
 #cardTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 500px;
-    width: 100vw;
+}
+
+#saveButton {
+    height: 50px;
+    width: 50px;
+}
+
+input {
+    height: 50px;
+    width: 150px;
+    margin: 20px auto;
 }
 
 #logBoxes {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 #logBox {
     height: 300px;
-    width: 300px;
+    width: 400px;
 }
 
 #loginEnv {
     height: 300px;
     width: 300px;
+    display: flex;
 }
+

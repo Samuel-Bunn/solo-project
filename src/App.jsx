@@ -1,3 +1,6 @@
+import LoginScreen from './components/Login/Login.jsx'
+import Logbox from './components/Logbox/logbox.jsx'
+import Card from './components/Card/Card.jsx'
 import './App.css'
 
 export default function App() {
@@ -7,15 +10,15 @@ export default function App() {
                 <h1> The Converter </h1>
             </header>
 
-            <section id="cardTable">
-                <div class='card'></div>
-            </section>
+            <main id="cardTable">
+                <Card></Card>
+            </main>
 
             <section id='logBoxes'>
-                <div id='logBox'></div>
-                <div id='loginEnv'></div>
+                <Logbox></Logbox>
+                <button id="saveButton">Save</button>
+                <LoginScreen></LoginScreen>
             </section>  
-
         </>
     )
 }

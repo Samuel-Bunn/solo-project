@@ -1,0 +1,36 @@
+
+.card {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 300px;
+}
+
+select {
+    margin-top: 50px;
+    height: 20px;
+    width: 200px;
+}
+
+#valueInput {
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+#swap {
+    padding: 10px;
+    margin: 0px 5px 0px 5px
+}
+
+#convert {
+    padding: 10px;
+    margin: 0px 5px 0px 5px
+}
+
+#answerBox {
+    height: 100px;
+    width: 200px;
+    margin-top: 40px;
+}
