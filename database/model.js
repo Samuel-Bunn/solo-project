@@ -1,10 +1,11 @@
 import { Model,DataTypes } from 'sequelize';
 import connectToDB from './db.js';
+import util from 'util'
 
 export const db = await connectToDB('postgresql:///savedUserData');
 
 export class User extends Model {
-  [util.inspect.custom]() {
+    [util.inspect.custom]() {
         return this.toJSON();
     }
 }
@@ -48,6 +49,10 @@ Saved.init(
             type: DataTypes.TEXT,
             allowNull: false,
         }
+    },
+    {
+        modelName: 'saved',
+        sequelize: db
     }
   )
 

@@ -1,13 +1,13 @@
 import React from "react"
 
 export function inchesToMm(inches) {
-    answer = inches * 25.4
+    let answer = inches * 25.4
     return `${inches} inches is ${answer}mm`
 }
 
 export function ouncesToMl(ounces) {
-    answer = ounces * 29.5735
-    return `${ounces}ounces is ${answer}ml`
+    let answer = ounces * 29.5735
+    return `${ounces} ounces is ${answer}ml`
 }
 
 export function fahrenheitToCelsius(fahrenheit) {

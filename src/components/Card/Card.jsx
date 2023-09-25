@@ -1,25 +1,35 @@
 import { useState } from 'react'
 import { inchesToMm, ouncesToMl, fahrenheitToCelsius } from '../../../utils/equations'
+import { useDispatch, useSelector } from 'react-redux'
 import './Card.css'
 
 const Card = () => {
-    const [selectEqu, setSelectEqu] = useState('')
+    const [selectEqu, setSelectEqu] = useState(0)
     const [valToConvert, setValToConvert] = useState(0)
-    const [history, setHistory] = useState([])
-
+    const dispatch = useDispatch()
+    const history = useSelector((state) => state.history)
+    
     const masterConverter = () => {
-    // switch case or if chain 
-    // if vaule of dropdown then do equation
-    // use value to convert state item for called conversion
-    // use a spread operator to add to history array
-    // [... history, fucntion ()]
+        switch (selectEqu){
+            case 1:  
+                let mm = inchesToMm(valToConvert)
+                dispatch({type: 'addHistory', payload: mm})
+                break
+            case 2:
+                let ml = ouncesToMl(valToConvert)
+                dispatch({type: 'addHistory', payload: ml})
+                break
+            case 3:
+                let celsius = fahrenheitToCelsius(valToConvert)
+                dispatch({type: 'addHistory', payload: celsius})
+                break
+        }
+            console.log(history)
     }
     
-
-
     return (
         <div className='card'>
-                    <select onChange={e => setSelectEqu(e.target.value)}>
+                    <select onChange={e => setSelectEqu(+e.target.value)}>
                         <option value="placeholder"> Please select a conversion</option>
                         <option value="1"> inches to mm </option>
                         <option value="2"> oz to liters</option>
@@ -30,7 +40,7 @@ const Card = () => {
                         <button id="swap">swap</button>
                         <button onClick={e => masterConverter()} id="convert">convert</button>
                     </div>
-                    <div id="answerBox"> </div>
+                    <div id="answerBox">{history[history.length - 1]}</div>
                 </div>
     )
 }

@@ -1,14 +1,29 @@
 
 #logBox {
     height: 300px;
-    width: 400px;
+    width: 500px;
     display: flex;
-    flex-direction: row;
-    
+    display: inline-block;
+    justify-content: center;
+    overflow: scroll;
+}
+
+h2 {
+    margin: 5px auto 5px auto;
 }
 
 #logRow {
-    height: 100px;
+    height: 30px;
+    width: 470px;
     display: flex;
-    border: 2px solid black;
+    border: 1px solid black;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+#saveButton {
+    margin-right: 5px;
 }

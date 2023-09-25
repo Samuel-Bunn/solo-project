@@ -3,7 +3,7 @@ div {
 }
 
 header {
-    height: 100px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,18 +13,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-}
-
-#saveButton {
-    height: 50px;
-    width: 50px;
-}
-
-input {
-    height: 50px;
-    width: 150px;
-    margin: 20px auto;
+    height: 450px;
 }
 
 #logBoxes {
@@ -33,14 +22,10 @@ input {
     justify-content: space-evenly;
 }
 
-#logBox {
-    height: 300px;
-    width: 400px;
-}
-
 #loginEnv {
     height: 300px;
     width: 300px;
     display: flex;
 }
+
 

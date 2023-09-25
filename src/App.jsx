@@ -1,5 +1,5 @@
 import LoginScreen from './components/Login/Login.jsx'
-import Logbox from './components/Logbox/logbox.jsx'
+import Logbox from './components/Logbox/Logbox.jsx'
 import Card from './components/Card/Card.jsx'
 import './App.css'
 
@@ -16,7 +16,6 @@ export default function App() {
 
             <section id='logBoxes'>
                 <Logbox></Logbox>
-                <button id="saveButton">Save</button>
                 <LoginScreen></LoginScreen>
             </section>  
         </>
