@@ -5,8 +5,44 @@
     display: flex;
     display: inline-block;
     justify-content: center;
+    overflow: scroll;
+}
+
+#logoutButton{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 45px;
+    margin-right: 5px;
 }
 
 h2 {
+    display: inline-block;
     margin: 5px auto 5px auto;
+}
+
+#savedHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#savedRow {
+    height: 30px;
+    width: 470px;
+    display: flex;
+    border: 1px solid black;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+#deleteButton {
+    margin-right: 5px;
+}
+
+p {
+    margin-left: 5px;
 }

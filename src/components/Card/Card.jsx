@@ -14,17 +14,21 @@ const Card = () => {
             case 1:  
                 let mm = inchesToMm(valToConvert)
                 dispatch({type: 'addHistory', payload: mm})
+                document.getElementById('valueInput').value = null
                 break
             case 2:
                 let ml = ouncesToMl(valToConvert)
                 dispatch({type: 'addHistory', payload: ml})
+                document.getElementById('valueInput').value = null
                 break
             case 3:
                 let celsius = fahrenheitToCelsius(valToConvert)
                 dispatch({type: 'addHistory', payload: celsius})
+                document.getElementById('valueInput').value = null
                 break
         }
-            console.log(history)
+        
+            // console.log(history)
     }
     
     return (
@@ -35,9 +39,8 @@ const Card = () => {
                         <option value="2"> oz to liters</option>
                         <option value="3"> F to C</option>
                     </select>
-                    <input onChange={e => setValToConvert(e.target.value)} type="text" id="valueInput" placeholder='input'></input>
+                    <input onChange={e => setValToConvert(e.target.value)} type="text" id="valueInput" placeholder='Value to convert'></input>
                     <div>
-                        <button id="swap">swap</button>
                         <button onClick={e => masterConverter()} id="convert">convert</button>
                     </div>
                     <div id="answerBox">{history[history.length - 1]}</div>

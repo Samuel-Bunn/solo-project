@@ -40,7 +40,7 @@ User.init(
 
 Saved.init(
     {
-        userId: {
+        savedId: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,

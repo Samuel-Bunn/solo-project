@@ -5,7 +5,8 @@ import SavedBox from '../savedBox/SavedBox.jsx'
 
 
 
-const LoginScreen = () => {
+const LoginScreen = ({saved, setAllSaved}) => {
+
     const [email, setEmail] = useState('')
     const [passw, setPassw] = useState('')
     const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -13,7 +14,6 @@ const LoginScreen = () => {
 
     const onLogin = async (event) => {
         event.preventDefault()
-        // console.log("hit")
         const res = await axios.post('/login', {email, passw})
         console.log(res)
         if (res.data.success){
@@ -25,7 +25,7 @@ const LoginScreen = () => {
 
     return isLoggedIn ? (
         <div>
-            <SavedBox></SavedBox>
+            <SavedBox saved={saved} setAllSaved={setAllSaved}></SavedBox>
         </div>
     ) : (
         <div>
