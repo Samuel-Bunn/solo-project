@@ -1,0 +1,22 @@
+
+#icons {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    height: 50px;
+    color: #F4972F;
+}
+
+#title {
+    width: 33%;
+    height: 50px;
+}
+
+#logoutDiv {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 33%;
+    height: 50px;
+}
+

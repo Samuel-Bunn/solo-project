@@ -54,7 +54,7 @@ select {
     font-weight: 100;
 }
 
-.screw {
+/* .screw {
     width: 20px;
     height: 20px;
     background: grey;
@@ -73,7 +73,7 @@ select {
     background-color: black;
     width: 2px;
     z-index: 2
-}
+} */
 
 .card-num-1 #screw1 {
     position: relative;

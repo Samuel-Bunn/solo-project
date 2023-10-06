@@ -26,20 +26,30 @@ const savedBox = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn}) => {
         setAllSaved(res.data)
     }
 
-    const logout = async () => {
-        const res = await axios.post('logout')
-        if (res.data.success) {
-            setIsLoggedIn(false)
-        }
-    }
+    
 
     return(
         <div id='savedBox'>
             <div id="savedHeader">
                 <h2>Saved Conversions</h2>
-                <button id="logoutButton" onClick={(e) => logout()}>logout</button>
+                
             </div>
+            <div id="saveWindow">
             {savedRows.reverse()}
+            </div>
+            
+            <div className='screw' id="screw13">
+                        <div className='screwSlot' id="screwSlot1" ></div>
+                    </div>
+                    <div className='screw' id="screw14">
+                        <div className='screwSlot' id="screwSlot2" ></div>
+                    </div>
+                    <div className='screw' id="screw15">
+                        <div className='screwSlot' id="screwSlot3"></div>
+                    </div>
+                    <div className='screw' id="screw16">
+                        <div className='screwSlot' id="screwSlot4"></div>
+                    </div>  
         </div>
     )
 }

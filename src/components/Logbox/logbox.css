@@ -11,7 +11,7 @@
 }
 
 #logWindow {
-   overflow: hidden;
+    overflow: hidden;
     justify-content: center;
     height: 200px;
     width: 500px;
@@ -19,6 +19,9 @@
 
 #logboxHeader {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 #logRow {
@@ -51,7 +54,7 @@ p {
 
 #screw5 {
     position: relative;
-    top: -250px;
+    top: -247px;
     left: 475px
 }
 #screwSlot5 {
@@ -60,7 +63,7 @@ p {
 
 #screw6 {
     position: relative;
-    top: -270px;
+    top: -267px;
     right: -5px
 }
 #screwSlot6{
@@ -69,7 +72,7 @@ p {
 
 #screw7 {
     position: relative;
-    bottom: 20px;
+    bottom: 13px;
     right: -5px;
 }
 #screwSlot7 {
@@ -78,7 +81,7 @@ p {
 
 #screw8 {
     position: relative;
-    bottom: 40px;
+    bottom: 33px;
     left: 475px;
 }
 #screwSlot8 {

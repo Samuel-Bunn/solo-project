@@ -27,19 +27,8 @@ const LoginScreen = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn, setOpen}) =
             <SavedBox saved={saved} setAllSaved={setAllSaved} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></SavedBox>
         </div>
     ) : (
-        <div id="login">
-            <div className='screw' id="screw9">
-                        <div className='screwSlot' id="screwSlot1" ></div>
-                    </div>
-                    <div className='screw' id="screw10">
-                        <div className='screwSlot' id="screwSlot2" ></div>
-                    </div>
-                    <div className='screw' id="screw11">
-                        <div className='screwSlot' id="screwSlot3"></div>
-                    </div>
-                    <div className='screw' id="screw12">
-                        <div className='screwSlot' id="screwSlot4"></div>
-                    </div>
+        <>
+            
             <form id="loginForm" onSubmit={onLogin}>
                 <div id="loginHeader">
                     <h2>Please login to save conversions</h2>
@@ -68,12 +57,21 @@ const LoginScreen = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn, setOpen}) =
                     <a href="#" id="signUpLink" onClick={handleOpen} > Sign-up </a>
                     <input type="submit" id="loginSubmit" />
                 </div>
+                    <div className='screw' id="screw9">
+                        <div className='screwSlot' id="screwSlot1" ></div>
+                    </div>
+                    <div className='screw' id="screw10">
+                        <div className='screwSlot' id="screwSlot2" ></div>
+                    </div>
+                    <div className='screw' id="screw11">
+                        <div className='screwSlot' id="screwSlot3"></div>
+                    </div>
+                    <div className='screw' id="screw12">
+                        <div className='screwSlot' id="screwSlot4"></div>
+                    </div>  
             </form>
-            
-            
-           
-        
-        </div> 
+         
+        </>    
     )
 }
 

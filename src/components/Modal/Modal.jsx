@@ -47,8 +47,9 @@ return (
             {display: 'flex'} : {display: 'none'}} >
             <div id="signUpWrapper" >
                 <div id="signUpModal">
-                <h2>Sign-up</h2>
+                
                 <form id="signUpForm">
+                    
                     <div className='screw' id="screw1">
                         <div className='screwSlot' id="screwSlot1" ></div>
                     </div>
@@ -61,6 +62,8 @@ return (
                     <div className='screw' id="screw4">
                         <div className='screwSlot' id="screwSlot4"></div>
                     </div>
+
+                    <h2 id="signUpTitle">Sign-up</h2>
                     <label className='label'>Email:</label>
                     <br/>
                     <input value = {email} className='modalInput' type='email' onChange={handleEmail} required/>

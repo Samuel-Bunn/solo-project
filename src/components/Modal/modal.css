@@ -28,10 +28,6 @@
     z-index: 4
 }
 
-h2 {
-    padding-bottom: 20px;
-}
-
 .modalInput {
     height: 30px;
     width: 300px;
@@ -56,14 +52,19 @@ h2 {
     border: 2px solid #F4972F;
     border-radius: 7px;
     width: 70px;
-    font-family: 'Martian Mono', monospace;;
+    font-family: 'Martian Mono', monospace;
+    margin-bottom: 3dvb;
 }
 
 .label {
     font-family: 'Martian Mono', monospace;
 }
 
-.modalButton {
+#signUpTitle {
+    margin-bottom: 30px;
+}
+
+.modalCloseButton {
     height: 30px;
     width: 60px;
 }
@@ -76,7 +77,7 @@ h2 {
 
 #screw1 {
     position: relative;
-    top: -30px;
+    top: 40px;
     left: 5px
 }
 #screwSlot1 {
@@ -85,7 +86,7 @@ h2 {
 
 #screw2 {
     position: relative;
-    top: -50px;
+    top: 20px;
     right: -325px
 }
 #screwSlot2 {
@@ -94,7 +95,7 @@ h2 {
 
 #screw3 {
     position: relative;
-    bottom: -300px;
+    bottom: -370px;
     right: -325px;
 }
 #screwSlot3 {
@@ -103,7 +104,7 @@ h2 {
 
 #screw4 {
     position: relative;
-    bottom: -280px;
+    bottom: -350px;
     left: 5px;
 }
 #screwSlot4 {
