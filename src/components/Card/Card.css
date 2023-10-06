@@ -6,32 +6,179 @@
     flex-direction: column;
     height: 400px;
     width: 300px;
+    background-color: #6d6761;
+    border-radius: 7px;
 }
 
 select {
-    margin-top: 50px;
+    margin-top: -20px;
     height: 20px;
     width: 200px;
     text-align: center;
+    background-color: #B2AFA4;
+    border: 2px solid #F4972F;
+    border-radius: 7px;
+    font-family: 'Martian Mono', monospace;
+    font-size: 12px;
 }
 
 #valueInput {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     text-align: center;
+    background-color: #B2AFA4;
+    border-radius: 7px;
+    border: 2px solid #F4972F;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 100;
 }
 
 #convert {
     padding: 10px;
-    margin: 0px 5px 0px 5px
 }
 
 #answerBox {
     height: 75px;
-    width: 200px;
-    margin-top: 40px;
+    width: 260px;
+    margin-top: 30px;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    border-radius: 7px;
+    background-color: #B2AFA4;
+    border: 2px solid #F4972F;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 100;
+}
+
+.screw {
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 50%;
+    background: radial-gradient(circle at 10px 10px, white, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 2px 2px 5px;
+    
+}
+
+.screwSlot {
+    height: 15px;
+    background-color: black;
+    width: 2px;
+    z-index: 2
+}
+
+.card-num-1 #screw1 {
+    position: relative;
+    top: 5px;
+    left: 133px
+}
+.card-num-1 #screwSlot1 {
+    transform: rotate(143deg);
+}
+
+.card-num-1 #screw2 {
+    position: relative;
+    top: -15px;
+    right: 135px
+}
+.card-num-1 #screwSlot2 {
+    transform: rotate(278deg)
+}
+
+.card-num-1 #screw3 {
+    position: relative;
+    bottom: -335px;
+    right: 135px;
+}
+.card-num-1 #screwSlot3 {
+    transform: rotate(62deg);
+}
+
+.card-num-1 #screw4 {
+    position: relative;
+    bottom: -315px;
+    left: 133px;
+}
+.card-num-1 #screwSlot4 {
+    transform: rotate(205deg);
+}
+
+.card-num-2 #screw1 {
+    position: relative;
+    top: 5px;
+    left: 133px
+}
+.card-num-2 #screwSlot1 {
+    transform: rotate(319deg);
+}
+
+.card-num-2 #screw2 {
+    position: relative;
+    top: -15px;
+    right: 135px
+}
+.card-num-2 #screwSlot2 {
+    transform: rotate(94deg);
+}
+
+.card-num-2 #screw3 {
+    position: relative;
+    bottom: -335px;
+    right: 135px;
+}
+.card-num-2 #screwSlot3 {
+    transform: rotate(176deg);
+}
+
+.card-num-2 #screw4 {
+    position: relative;
+    bottom: -315px;
+    left: 135px;
+}
+.card-num-2 #screwSlot4 {
+    transform: rotate(11deg);
+}
+
+.card-num-3 #screw1 {
+    position: relative;
+    top: 5px;
+    left: 133px
+}
+.card-num-3 #screwSlot1 {
+    transform: rotate(246deg);
+}
+
+.card-num-3 #screw2 {
+    position: relative;
+    top: -15px;
+    right: 135px
+}
+.card-num-3 #screwSlot2 {
+    transform: rotate(57deg);
+}
+
+.card-num-3 #screw3 {
+    position: relative;
+    bottom: -335px;
+    right: 135px;
+}
+.card-num-3 #screwSlot3 {
+    transform: rotate(331deg);
+}
+
+.card-num-3 #screw4 {
+    position: relative;
+    bottom: -315px;
+    left: 135px;
+}
+.card-num-3 #screwSlot4 {
+    transform: rotate(189deg);
 }

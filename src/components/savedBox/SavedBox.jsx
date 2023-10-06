@@ -1,8 +1,16 @@
+import { useEffect } from 'react'
 import axios from 'axios'
 import './savedBox.css'
-import LoginScreen from '../Login/Login'
 
-const savedBox = ({saved, setAllSaved}) => {
+const savedBox = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn}) => {
+
+    useEffect(() => {
+            const fetchData = async () => {
+                const response = await axios.get('/fetchData')
+                setAllSaved(response.data)
+               }
+               fetchData()
+            }, [isLoggedIn])
 
     let savedRows = saved.map(({savedData, savedId}) => {
         return (
@@ -14,15 +22,15 @@ const savedBox = ({saved, setAllSaved}) => {
     })
 
     const deleteSaved = async (savedId) => {
-        console.log('hit')
         const res = await axios.post(`/deleteData/${savedId}`)
-        console.log(res.data)
         setAllSaved(res.data)
     }
 
     const logout = async () => {
-        console.log('hit')
-        await axios.post('logout')
+        const res = await axios.post('logout')
+        if (res.data.success) {
+            setIsLoggedIn(false)
+        }
     }
 
     return(

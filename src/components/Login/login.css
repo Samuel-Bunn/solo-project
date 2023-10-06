@@ -2,14 +2,32 @@
 #login {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
-    width: 500px;
 }
 
-h2 {
-    text-align: center;
+#loginForm {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6d6761;
+    border-radius: 7px;
+}
+
+#loginHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginInputForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .loginInputs {
@@ -17,19 +35,57 @@ h2 {
     width: 300px;
     height: 30px;
     margin: 10px auto;
+    border: 2px solid #F4972F;
+    border-radius: 7px;
+    font-family: 'Martian Mono', monospace;
 }
 
-#signUp {
-    width: 100px;
+#signUpLink {
+    margin-top: 10px;
+    font-family: 'Martian Mono', monospace;
 }
+
 
 #loginSubmit {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
     width: 100px;
+    border-radius: 7px;
+    border: 2px solid #F4972F;
+    font-family: 'Martian Mono', monospace;
 }
 
+#screw9 {
+    position: relative;
+    top: 5px;
+    left: 85px
+}
+#screwSlot1 {
+    transform: rotate(143deg);
+}
 
+#screw10 {
+    position: relative;
+    top: 275px;
+    right: -535px
+}
+#screwSlot2 {
+    transform: rotate(278deg)
+}
 
+#screw11 {
+    position: relative;
+    bottom: -275px;
+    right: -45px;
+}
+#screwSlot3 {
+    transform: rotate(62deg);
+}
 
-
+#screw12 {
+    position: relative;
+    bottom: -5px;
+    left: 495px;
+}
+#screwSlot4 {
+    transform: rotate(205deg);
+}

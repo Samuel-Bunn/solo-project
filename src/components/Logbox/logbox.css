@@ -4,36 +4,83 @@
     width: 500px;
     display: flex;
     display: inline-block;
+    flex-direction: column;
     justify-content: center;
-    overflow: scroll;
+    background-color: #6d6761;
+    border-radius: 7px;
+}
+
+#logWindow {
+   overflow: hidden;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
 }
 
 #logboxHeader {
     display: flex;
 }
 
-h2 {
-    margin: 5px auto 5px auto;
-}
-
 #logRow {
     height: 30px;
     width: 470px;
     display: flex;
-    border: 1px solid black;
+    border: 2px solid #F4972F;
+    border-radius: 7px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     margin: 5px auto;
+    background-color: #B2AFA4;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 100;
 }
 
 #saveButton {
+    justify-content: center;
+    text-align: center;
     margin-right: 5px;
     height: 20px;
-    width: 45px;
+    width: 50px;
 }
 
 p {
     margin-left: 5px;
+}
+
+#screw5 {
+    position: relative;
+    top: -250px;
+    left: 475px
+}
+#screwSlot5 {
+    transform: rotate(127deg);
+}
+
+#screw6 {
+    position: relative;
+    top: -270px;
+    right: -5px
+}
+#screwSlot6{
+    transform: rotate(249deg)
+}
+
+#screw7 {
+    position: relative;
+    bottom: 20px;
+    right: -5px;
+}
+#screwSlot7 {
+    transform: rotate(23deg);
+}
+
+#screw8 {
+    position: relative;
+    bottom: 40px;
+    left: 475px;
+}
+#screwSlot8 {
+    transform: rotate(301deg);
 }

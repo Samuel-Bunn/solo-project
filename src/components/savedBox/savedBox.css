@@ -5,14 +5,15 @@
     display: flex;
     display: inline-block;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
+    background-color: #6d6761;
+    border-radius: 7px;
 }
 
 #logoutButton{
     display: flex;
     justify-content: center;
     height: 20px;
-    width: 45px;
     margin-right: 5px;
 }
 
@@ -31,12 +32,16 @@ h2 {
     height: 30px;
     width: 470px;
     display: flex;
-    border: 1px solid black;
+    border: 2px solid #F4972F;
+    border-radius: 7px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     margin: 5px auto;
+    background-color: #B2AFA4;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 100;
 }
 
 #deleteButton {

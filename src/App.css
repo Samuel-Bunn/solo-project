@@ -1,5 +1,5 @@
-div {
-    border: 1px solid black;
+html {
+    background-color: #160f0a;
 }
 
 header {
@@ -7,6 +7,33 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #f4972f;
+}
+
+input {
+    background-color: #B2AFA4;
+}
+
+#icons {
+    float: right;
+    color: #F4972F;
+    padding-right: 10px;
+}
+
+h1 {
+    color: #F4972F;
+    font-family: 'Martian Mono', monospace;
+    font-size: 40px;
+    font-weight: 100;
+    margin: auto;
+    padding-left: 10px;
+}
+
+h2 {
+    color: #F4972F;
+    font-family: 'Martian Mono', monospace;
+    padding-top: 10px;
+    font-weight: 100;
 }
 
 #cardTable {
@@ -14,11 +41,14 @@ header {
     justify-content: center;
     align-items: center;
     height: 450px;
+    justify-content: space-evenly;
 }
 
 #logBoxes {
     display: flex;
+    /* display: block; */
     align-items: center;
+    justify-content: center;
     justify-content: space-evenly;
 }
 
@@ -28,4 +58,14 @@ header {
     display: flex;
 }
 
+footer {
+    height: 40px;
+}
 
+button {
+    background-color: #B2AFA4;
+    border: 2px solid #F4972F;
+    border-radius: 7px;
+    font-family: 'Martian Mono', monospace;
+    
+}

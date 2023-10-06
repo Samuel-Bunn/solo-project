@@ -1,0 +1,113 @@
+
+#modal{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    background-color: #160f0a;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    z-index: 3;
+}
+
+#signUpWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#signUpModal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    background-color: #6d6761;
+    border-radius: 7px;
+    z-index: 4
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+.modalInput {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#signUpForm {
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top:  -60px;
+}
+#closeButtonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#modalSubmit {
+    background-color: #B2AFA4;
+    border: 2px solid #F4972F;
+    border-radius: 7px;
+    width: 70px;
+    font-family: 'Martian Mono', monospace;;
+}
+
+.label {
+    font-family: 'Martian Mono', monospace;
+}
+
+.modalButton {
+    height: 30px;
+    width: 60px;
+}
+
+#modalBody {
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+}
+
+#screw1 {
+    position: relative;
+    top: -30px;
+    left: 5px
+}
+#screwSlot1 {
+    transform: rotate(143deg);
+}
+
+#screw2 {
+    position: relative;
+    top: -50px;
+    right: -325px
+}
+#screwSlot2 {
+    transform: rotate(278deg)
+}
+
+#screw3 {
+    position: relative;
+    bottom: -300px;
+    right: -325px;
+}
+#screwSlot3 {
+    transform: rotate(62deg);
+}
+
+#screw4 {
+    position: relative;
+    bottom: -280px;
+    left: 5px;
+}
+#screwSlot4 {
+    transform: rotate(205deg);
+}
+
+

@@ -39,11 +39,24 @@ app.post('/savedData', async (req, res) => {
   res.status(200).json(allSaved)
 })
 
+app.get('/fetchData', async (req, res) => {
+  let user = await User.findByPk(req.session.userId)
+  let data = await Saved.findAll({where: {userId: user.userId}})
+  res.status(200).json(data)
+})
+
 app.post('/deleteData/:savedId', async (req, res) => {
   let data = await Saved.findOne({where: {savedId: +req.params.savedId}})
   await data.destroy()
   let allSaved = await Saved.findAll({where: {userId: +req.session.userId}})
   res.status(200).json(allSaved)
+})
+
+app.post('/signUp', async (req,res) => {
+  const { email, passw } = req.body
+  const user = await User.create({ email: email, passw: passw})
+  req.session.userId = user.userId
+  res.json({ success: true})
 })
 
 app.post('/logout', async (req,res) => {
