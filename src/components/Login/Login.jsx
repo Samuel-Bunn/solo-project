@@ -17,7 +17,7 @@ const LoginScreen = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn, setOpen}) =
           setIsLoggedIn(true)
         }
       }
-    
+      
     const handleOpen = () => {
         setOpen(true)
     }
@@ -28,7 +28,6 @@ const LoginScreen = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn, setOpen}) =
         </div>
     ) : (
         <>
-            
             <form id="loginForm" onSubmit={onLogin}>
                 <div id="loginHeader">
                     <h2>Please login to save conversions</h2>

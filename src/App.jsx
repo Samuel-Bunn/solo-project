@@ -19,13 +19,11 @@ export default function App() {
                     <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}></Header>
                 </header>
                 <main>
-
                     <div id="cardTable">
                     <Card cardNum={1}/>
                     <Card cardNum={2}/>
                     <Card cardNum={3}/>
                     </div>
-
                     <div id='logBoxes'>
                     <Logbox setAllSaved={setAllSaved} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
                     <div id="spacer"></div>

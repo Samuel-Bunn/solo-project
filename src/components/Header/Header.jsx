@@ -1,5 +1,4 @@
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs"
-import { useState } from "react"
 import axios from "axios"
 import './header.css'
 
@@ -17,11 +16,9 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
             <div id="icons" >
                 <BsFacebook /> <BsInstagram/> <BsTwitter/>
             </div>
-
             <div id='title'>
                 <h1> The Combobulator </h1>
             </div>
-            
             <div id="logoutDiv">
                 <button id="logoutButton" onClick={(e) => logout()}>logout</button>   
             </div>
@@ -31,13 +28,10 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
             <div id="icons" >
                 <BsFacebook /> <BsInstagram/> <BsTwitter/>
             </div>
-
             <div id='title'>
                 <h1> The Combobulator </h1>
             </div>
-            
             <div id="logoutDiv">
-                  
             </div>
         </>    
     )

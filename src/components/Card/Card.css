@@ -54,27 +54,6 @@ select {
     font-weight: 100;
 }
 
-/* .screw {
-    width: 20px;
-    height: 20px;
-    background: grey;
-    border-radius: 50%;
-    background: radial-gradient(circle at 10px 10px, white, #000);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    box-shadow: 2px 2px 5px;
-    
-}
-
-.screwSlot {
-    height: 15px;
-    background-color: black;
-    width: 2px;
-    z-index: 2
-} */
-
 .card-num-1 #screw1 {
     position: relative;
     top: 5px;

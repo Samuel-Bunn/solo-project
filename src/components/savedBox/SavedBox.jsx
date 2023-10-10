@@ -26,18 +26,14 @@ const savedBox = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn}) => {
         setAllSaved(res.data)
     }
 
-    
-
     return(
         <div id='savedBox'>
             <div id="savedHeader">
                 <h2>Saved Conversions</h2>
-                
             </div>
             <div id="saveWindow">
             {savedRows.reverse()}
             </div>
-            
             <div className='screw' id="screw13">
                         <div className='screwSlot' id="screwSlot1" ></div>
                     </div>
@@ -49,7 +45,7 @@ const savedBox = ({saved, setAllSaved, isLoggedIn, setIsLoggedIn}) => {
                     </div>
                     <div className='screw' id="screw16">
                         <div className='screwSlot' id="screwSlot4"></div>
-                    </div>  
+            </div>  
         </div>
     )
 }
