@@ -6,7 +6,19 @@
     height: 50px;
     color: #F4972F;
     font-size: 30px;
-    word-spacing: 20px;
+    gap: 5px
+}
+
+a {
+    color: #F4972F;
+}
+
+a:hover {
+    color: #B2AFA4;
+}
+
+a:visited {
+    color: #303618;
 }
 
 #title {

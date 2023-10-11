@@ -61,6 +61,11 @@ button {
     font-family: 'Martian Mono', monospace;
 }
 
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .screw {
     width: 20px;
     height: 20px;

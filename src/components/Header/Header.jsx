@@ -14,7 +14,9 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
     return isLoggedIn ? (
         <>
             <div id="icons" >
-                <BsFacebook /> <BsInstagram/> <BsTwitter/>
+                <a href="https://www.facebook.com/"><BsFacebook/> </a>
+                <a href="https://www.instagram.com/"><BsInstagram/></a>
+                <a href="https://twitter.com/"><BsTwitter/></a> 
             </div>
             <div id='title'>
                 <h1> The Combobulator </h1>
@@ -26,7 +28,9 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
     ) : (
         <>
             <div id="icons" >
-                <BsFacebook /> <BsInstagram/> <BsTwitter/>
+                <a href="https://www.facebook.com/"><BsFacebook/> </a>
+                <a href="https://www.instagram.com/"><BsInstagram/></a>
+                <a href="https://twitter.com/"><BsTwitter/></a> 
             </div>
             <div id='title'>
                 <h1> The Combobulator </h1>

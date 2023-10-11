@@ -25,7 +25,7 @@ export function milesToFeet(miles2) {
 }
 
 export function feetToMiles(feet) {
-    let answer = feet / .000189394
+    let answer = feet / 5280
     return `${feet} feet is ${answer.toFixed(3)} miles`
 }
 

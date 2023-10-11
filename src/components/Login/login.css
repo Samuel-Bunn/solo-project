@@ -52,6 +52,11 @@
     font-family: 'Martian Mono', monospace;
 }
 
+#loginSubmit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 #screw9 {
     position: relative;
     top: -248px;
